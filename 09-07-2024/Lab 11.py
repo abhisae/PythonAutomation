@@ -50,3 +50,106 @@ print(x)
 a="Hello"
 print(a.zfill(10))
 print(a.zfill(4))
+
+#Count Method :- Find the Occurances present in string
+
+s="Abhijit"
+print("The count of i IS",s.count('i'))
+
+#lower - Returns all in lowser case
+
+txt = "Hello my FRIENDS"
+s=txt.lower()
+print(s)
+
+#Upper - Retuns all in Upper Case
+
+txt = "Hello my friends"
+s=txt.upper()
+print(s)
+
+#endswith - This method returns "True" if specified value at the end
+txt = "Hello my friends."
+s=txt.endswith(".")
+print(s)
+
+#Startwith - This method return "True" if specified Value at the start
+txt = "Hello my friends."
+s=txt.startswith("Hello")
+print(s)
+
+#capitalize :- This method returs the First charcher in Uppercase rest all in lowser case
+
+txt = "hello, and welcome to my World."
+s=txt.capitalize()
+print(s)
+
+txt = "hELLO, AND WELCOME TO MY WORLD."
+s=txt.capitalize()
+print(s)
+
+#Center :- Align string in Center
+
+txt='Python'
+s=txt.center(20,"O")
+print(s)
+
+#Replace : It replaces the Old character to the new character. It requires 2 Arguments( Old, New)
+
+s="Python"
+x=s.replace('P','J')
+print(x)
+
+#format():-The format() method formats the specified value(s) and insert them inside the string's placeholder.
+#the placeholder is defined using curly brackets: {}.
+
+#Named Index
+txt1 = "My name is {name}, I'm {age}".format(name = "python", age = 1979)
+print(txt1)
+
+#Number Index
+txt1 = "My name is {0}, I'm {1}".format("python",  1979)
+print(txt1)
+
+#Empty Placeholder
+txt1 = "My name is {}, I'm {}".format("python", 1979)
+print(txt1)
+
+
+#isalnum():--returns True if all the characters are alphanumeric,
+# meaning alphabet letter (a-z) and numbers (0-9).
+
+#eg.1
+txt="Python123"
+b=txt.isalnum()
+print(b)  #o/p ->True
+
+#eg.2
+txt="Python@123"
+b=txt.isalnum()
+print(b)  #o/p ->False
+
+#eg.3
+txt="Python_123"
+b=txt.isalnum()
+print(b)  #o/p -False
+
+
+#istitle():-- returns True if all words in a text start with a upper case letter,
+# AND the rest of the word are lower case letters, otherwise False.
+
+txt="Python12"
+b=txt.istitle()
+print(b)  #O/P ->True
+
+txt="python12"
+b=txt.istitle()
+print(b)  #o/p ->False
+
+txt="PYTHON12"
+b=txt.istitle()
+print(b) #o/p ->False
+
+txt="Python 12"
+b=txt.istitle()
+print(b)  #o/p ->True
